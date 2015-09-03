@@ -3,7 +3,7 @@ Project Test
 
 ## Arquitetura
 
-Back end: Framework Srping Web: Web MVC (Model, View, Controller), Banco de dados relacional, API RestFul
+Back end: Framework Spring Web: Web MVC (Model, View, Controller), Banco de dados relacional, API RestFul
 Front end: Framework AngularJS: MVVM (Model, View, ViewModel).
 
 
