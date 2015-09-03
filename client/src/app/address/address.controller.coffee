@@ -14,7 +14,7 @@ angular.module "project-test"
       $scope.updateAddress = ($routeParams) ->
         console.log $scope.address
         AddressFactory.update($scope.address.id, $scope.address).success ->
-          $location.path '/address-list'
+          $location.path '/list-address'
         return
 
       $scope.findZip = ->
