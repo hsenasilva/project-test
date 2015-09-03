@@ -43,18 +43,6 @@ public class AddressController {
 	@Autowired
 	private ZipService zipService;
 
-	// @Transactional(readOnly = true)
-	// @RequestMapping(method = RequestMethod.GET)
-	// public Page<AddressDTO> list(@PageableDefault(page = 0, size = 50, sort =
-	// "name") Pageable page) {
-	//
-	// Page<Address> result = repository.findAll(page);
-	//
-	// return new PageImpl<AddressDTO>(result.getContent().stream().map(c -> new
-	// AddressDTO(c)).collect(Collectors.toList()),
-	// page, result.getTotalElements());
-	// }
-
 	@Transactional(readOnly = true)
 	@RequestMapping(method = RequestMethod.GET)
 	public List<Address> listAll() {
@@ -69,9 +57,8 @@ public class AddressController {
 		ZipDTO zipDto = zipService.findZip(dto.getZipcodeNumber());
 		Zip zip = convertZip.toEntity(zipDto);
 		City city = cityRepository.findByName(dto.getCity());
-		if (city == null) {
+		if (city == null)
 			throw new NotFoundException(City.class);
-		}
 
 		Address entity = new AddressDTO().dtoToAddress(dto, zip, city);
 		entity = repository.save(entity);

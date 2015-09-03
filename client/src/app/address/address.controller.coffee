@@ -25,6 +25,8 @@ angular.module "project-test"
             $scope.address.state = data.uf
             $scope.address.complement = data.complement
             $scope.address.city = data.locality
+          .error (data) ->
+
 
         # $location.path '/list-address'
         return

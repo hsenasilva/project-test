@@ -9,7 +9,7 @@
     <div class="control-group">
       <label class="control-label" for="inputZip">CEP*: </label>
       <div class="controls">
-        <input type="text" class="input input-md" id="inputZip" ng-model="address.zipcodeNumber" ng-maxlength="8" ng-minlength="8" required/>
+        <input type="text" class="input input-md" id="inputZip" ng-model="address.zipcodeNumber" ui-br-cep-mask required/>
         <a ng-click="findZip()" class="btn btn-small btn-primary">Buscar</a>
       </div>
     </div>
@@ -22,7 +22,7 @@
     <div class="control-group">
       <label class="control-label" for="inputNumber">Número*: </label>
       <div class="controls">
-        <input type="text" id="inputNumber" ng-model="address.number" required/>
+        <input type="number" id="inputNumber" ng-model="address.number" required/>
       </div>
     </div>
     <div class="control-group">
