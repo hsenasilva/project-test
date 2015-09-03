@@ -1,8 +1,5 @@
 package project.test;
 
-import project.test.Application;
-import project.test.security.UserAuthentication;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,8 +12,6 @@ import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.TestRestTemplate;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -49,16 +44,6 @@ public abstract class ApplicationTest {
 		template.execute("TRUNCATE SCHEMA public AND COMMIT");
 	}
 
-	protected void signIn(UserAuthentication user) {
-		ResponseEntity<Object> response = post("/login")
-		    .formParam("username", user.getLogin())
-		    .formParam("password", user.getPassword())
-		    .expectedStatus(HttpStatus.OK)
-		    .getResponse(Object.class);
-
-		authentication = response.getHeaders().getFirst("Set-Cookie");
-	}
-
 	protected void add(Object... objects) {
 		for (Object object : objects) {
 			toPersist.add(object);
@@ -81,10 +66,6 @@ public abstract class ApplicationTest {
 		em.close();
 		toPersist.clear();
 		em.getTransaction().commit();
-	}
-
-	protected void signOut(UserAuthentication user) {
-		this.authentication = null;
 	}
 
 	protected RequestBuilder get(String uri) {

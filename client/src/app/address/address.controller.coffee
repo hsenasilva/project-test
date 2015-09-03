@@ -44,7 +44,7 @@ angular.module "project-test"
     'AddressFactory'
     '$location'
     ($scope, AddressesFactory, AddressFactory, $location) ->
-      # callback for ng-click 'editUser':
+      # callback for ng-click 'editAddress':
 
       $scope.editAddress = (addressId) ->
         $location.path '/edit-address/' + addressId

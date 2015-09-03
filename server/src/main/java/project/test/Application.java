@@ -88,17 +88,7 @@ public class Application extends WebMvcConfigurerAdapter {
 			this.configureCsrf(http);
 			this.configureSession(http);
 			this.configureEntryPoint(http);
-//			this.configureAuthentication(http);
 		}
-
-//		private void configureAuthentication(HttpSecurity http) throws Exception {
-//			DefaultSuccessHandler successHandler = new DefaultSuccessHandler(p -> (DefaultUser));
-//
-//			http.formLogin().loginProcessingUrl("/login").successHandler(successHandler)
-//			    .failureHandler(new DefaultFailureHandler());
-//
-//			http.logout().logoutUrl("/logout").logoutSuccessHandler(successHandler);
-//		}
 
 		private void configureCsrf(HttpSecurity http) throws Exception {
 			http.csrf().disable();
