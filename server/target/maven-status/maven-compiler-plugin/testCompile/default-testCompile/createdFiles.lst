@@ -1,0 +1,9 @@
+project/test/controller/MeControllerTest.class
+project/test/controller/LoginAndAccessTest.class
+project/test/controller/AddressControllerTest.class
+project/test/compose/Compose.class
+project/test/controller/MailControllerTest.class
+project/test/ApplicationTest.class
+project/test/RequestBuilder.class
+project/test/controller/CityControllerTest.class
+project/test/controller/ZipControllerTest.class
