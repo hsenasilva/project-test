@@ -41,20 +41,20 @@ public static void main(String[] args) throws Exception {
 
 ## Front-End
 
-- Install HomeBrew
+- Instalar HomeBrew
 
 ```
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 
-- Install Git
+- Instalar Git
 ```
 sudo apt-get install git
 
 ```
 
-- Install NodeJS
+- Instalar NodeJS
 ```
 cd ~/
 
@@ -82,13 +82,13 @@ sudo npm install -g bower
 
 ```
 
-- Install Node Modules
+- Instalar Node Modules
 ```
 npm install
 
 ```
 
-- Install Bower Components
+- Instalar Bower Components
 ```
 
 bower install
