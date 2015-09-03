@@ -11,7 +11,7 @@ Project Test
 Lombok instalação:
 Rode:
 ```
-java -jar ~/.m2/repository/org/projectlombok/lombok/1.16.4/lombok-1.16.4.jar
+java -jar ~/.m2/repository/org/projectlombok/lombok/1.16.2/lombok-1.16.2.jar
 ```
 Após rodar, será necessário especificar a pasta que o Eclipse esteja instalado, selecione a pasta 'eclipse' para a instalação na pasta do Eclipse e click em Install.
 

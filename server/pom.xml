@@ -17,7 +17,7 @@
 	<properties>
 
 		<!-- UTIL -->
-		<lombok-version>1.16.4</lombok-version>
+		<lombok-version>1.16.2</lombok-version>
 		<orika-version>1.4.6</orika-version>
 
 	</properties>
