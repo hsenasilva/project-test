@@ -7,7 +7,7 @@ Back end: Framework Srping Web: Web MVC (Model, View, Controller), Banco de dado
 Front end: Framework AngularJS: MVVM (Model, View, ViewModel).
 
 
-## Requisitos
+## Requisitos Back-End
 - Maven | [http://maven.apache.org/](http://maven.apache.org/)
 
 - JDK8 Oracle/Sun | [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
@@ -49,7 +49,7 @@ public static void main(String[] args) throws Exception {
 
 Para a fácil importação utilizar o app Sequel Pro (MAC only) - | [http://www.sequelpro.com/download](http://www.sequelpro.com/download)
 
-## Front-End
+## Requisitos Front-End
 
 - Instalar HomeBrew
 
