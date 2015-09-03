@@ -1,6 +1,12 @@
 Project Test
 ========
 
+## Arquitetura
+
+Back end: Framework Srping Web: Web MVC (Model, View, Controller), Banco de dados relacional, API RestFul
+Front end: Framework AngularJS: MVVM (Model, View, ViewModel).
+
+
 ## Requisitos
 - Maven | [http://maven.apache.org/](http://maven.apache.org/)
 
@@ -31,13 +37,17 @@ spring.datasource.password=
 ```
 
 - Após isso para rodar o back end do projeto entre na classe Application.java, clique com o botão do direito do mouse em cima do método main, Run As > Java Application:
-
+- Método main:
 ```
 public static void main(String[] args) throws Exception {
 	new SpringApplicationBuilder(Application.class).run(args);
 }
 ```
+- Após o projeto rodar, ele criará as tabelas necessárias no banco de dados, e então precisaremos popular as tabelas "state", "city" e "zipcode", os arquivos .SQL para importar estão nos links: 
+- Tabela "city" e "state" | [http://www.dropbox.com/s/9izy2eb1yiif7tx/cityAndState.sql?dl=0](http://www.dropbox.com/s/9izy2eb1yiif7tx/cityAndState.sql?dl=0)
+- Tabela "zipcode" | [http://www.dropbox.com/s/01ka6h1zmfsyl79/zipcode.sql?dl=0](http://www.dropbox.com/s/01ka6h1zmfsyl79/zipcode.sql?dl=0)
 
+Para a fácil importação utilizar o app Sequel Pro (MAC only) - | [http://www.sequelpro.com/download](http://www.sequelpro.com/download)
 
 ## Front-End
 
